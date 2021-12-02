@@ -24,7 +24,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Prop", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Prop", meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* Mesh;
 
 };
